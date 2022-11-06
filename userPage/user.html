@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="user.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="headerContent container">
+
+            <div class="divTitle ">
+                <img src="/assets/poit.png" alt="" class="imgPoint">
+                <h1 class="h1Header">Kenzie Empresas</h1>
+            </div>
+    
+            <button class="buttonLogout">Logout</button>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="sectionUser container">
+
+            <h2 class="h2UserName">
+                user Name
+            </h2>
+
+            <div class="divContainerUser">
+                <P class="userEmail">Email: meuemail@mail.com</P>
+                <p class="userStatus">Pleno</p>
+                <p class="userModality">homeOfice</p>
+                <img src="/assets/pincel-blue.png" alt="" class="imgEdit">
+            </div>
+
+
+        </section>
+
+        <div class="userOption">
+
+        </div>
+
+        <!-- <section class="container sectionContainerDefault">
+
+            <p class="pDefault">Você ainda não foi contratado</p>
+
+        </section>  -->
+
+        <section class="container sectionContainer">
+            <div class="divTitleContent">
+                <h2 class="h2CompanyName">Company Name </h2>
+                <span class="h2Span"> - </span>
+                <h2 class="h2DepartmentName">Department Name</h2>
+            </div>
+            <div class="spaceOfCards">
+
+            </div>
+
+        </section> 
+
+        <dialog class="modal">
+
+            <img src="/assets/exit.png" alt="" class="exitModal">
+
+            <form action="" class="formModal">
+
+                <h2 class="titleModalEdit">Editar Perfil</h2>
+
+                <input type="text" name="username" id="username" placeholder="Seu nome">
+                <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                <input type="password" name="password" id="password" placeholder="Sua senha">
+
+                <button class="buttonSubmit" type="submit">Editar perfil</button>
+
+            </form>
+
+        </dialog>
+
+    </main>
+    <script type="module" src="user.js"></script>
+</body>
+</html>

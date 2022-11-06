@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="register.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="divObserver">
+
+        </div>
+
+        <div class="titleAndOptionsMobile">
+            <div class="divTitle">
+                <img src="/assets/poit.png" alt="" class="imgPoint">
+                <h1 class="titleH1">Kenzie Empresas</h1>
+            </div>
+
+            <div class="divButtonsHeaderMobile  ">
+                <img src="/assets/optionsMobile.png" alt="" class="imgOptionsMobile">
+                <img src="/assets/exit.png" alt="" class="imgExitMobile displayNone">
+            </div>
+        </div>
+
+        <div class="divButtonsHeader ">
+            <button class="buttonLoguin">loguin</button>
+            <button class="buttonHome">home</button>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <form action="">
+            <h2 class="h2Register">Cadastre-se</h2>
+
+            <input type="text" name="username" id="username" placeholder="Seu nome" required>
+
+            <input type="email" name="email" id="email"  placeholder="Seu e-mail" required>
+
+            <input type="password" name="password" id="password"  placeholder="Sua senha" required>
+
+            <select name="professional_level" id="nivel" required>
+                <option value="">Nivel Proficional</option>
+                <option value="estágio">estágio</option>
+                <option value="júnior">júnior</option>
+                <option value="pleno">pleno</option>
+                <option value="sênior">sênior</option>
+            </select>
+
+            <button type="submit" class="buttonRegister">Cadastre-se</button>
+            <button type="button" class="buttonReturn">Retornar</button>
+
+        </form>
+
+
+    </main>
+
+    
+
+    <script type="module" src="register.js"></script>
+</body>
+
+</html>

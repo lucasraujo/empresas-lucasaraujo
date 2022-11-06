@@ -1,0 +1,243 @@
+header{
+
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.titleAndOptionsMobile{
+
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.divTitle{
+    display: flex;
+    align-items: center;
+
+}
+
+.imgPoint{
+    width: 12px;
+    height: 12px;
+    margin-right: 1rem;
+
+}
+
+.titleH1{
+
+
+    font-weight: 700;
+
+}
+
+.divButtonsHeaderMobile{
+
+}
+
+.imgOptionsMobile{
+
+}
+
+.imgExitMobile{
+
+}
+
+.divButtonsHeader{
+    margin-top: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    display: none;
+
+}
+
+.buttonLoguin{
+
+    /* width: 50%; */
+    padding: 0.4rem;
+    color: var(--blue);
+    background-color: var(--white);
+    border:1px solid var(--blue);
+
+    font-weight: 700;
+
+}
+
+.buttonHome{
+
+    /* width: 50%; */
+    padding: 0.4rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border:1px solid var(--blue);
+
+    font-weight: 700;
+
+}
+
+.divObserver{
+    width: 1px;
+    height: 1px;
+    display: none;
+
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+main{
+
+    width: 100%;
+    height: 100vh;
+    background-image:url("/assets/imgBackground.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+form{
+
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 1rem;
+    width: 100%;
+    
+    height: 60vh;
+    justify-content: space-evenly;
+
+}
+
+.h2Register{
+
+padding: 1rem;
+margin: 0.5rem 1rem;
+
+font-weight: 700;
+font-size: 40PX;
+
+}
+
+input{
+
+    padding: 0.5rem 1rem ;
+    margin: 0 1rem;
+    border: 1px solid var(--black);
+
+}
+
+select{
+
+
+    padding: 0.5rem 1rem ;
+    margin: 0 1rem;
+
+}
+
+.buttonRegister{
+
+    padding: 0.5rem 1rem ;
+    margin: 0 1rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    cursor: pointer;
+
+}
+
+.buttonReturn{
+
+    padding: 0.5rem 1rem ;
+    margin: 0 1rem;
+
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    cursor: pointer;
+
+}
+
+.tostFailed{
+
+    background-color: var(--red);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    position: fixed;
+    bottom:2.5rem;
+    right: 1rem;
+
+}
+.pFailed{
+
+    color: var(--white);
+
+
+}
+.tostSuccess{
+
+    background-color: var(--green);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    position: fixed;
+    bottom:2.5rem;
+    right: 1rem;
+
+}
+.pSuccess{
+
+    color: var(--white);
+
+}
+
+
+@media(min-width:500px){
+
+    .divButtonsHeaderMobile{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .divTitle{
+        margin: 0 4rem;
+    
+    }
+
+    .divButtonsHeader{
+        margin: 0 4rem;
+        display: flex;
+
+    }
+
+    .buttonLoguin{
+        white-space:nowrap;
+
+    }
+
+    .divObserver{
+        display: flex;
+    }
+
+    form{
+        max-width: 450px;
+    }
+
+}

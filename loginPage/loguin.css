@@ -1,0 +1,218 @@
+header{
+
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.titleAndOptionsMobile{
+
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.divTitle{
+    display: flex;
+    align-items: center;
+
+}
+
+.imgPoint{
+    width: 12px;
+    height: 12px;
+    margin-right: 1rem;
+
+}
+
+.titleH1{
+
+
+    font-weight: 700;
+
+}
+
+.divButtonsHeaderMobile{
+
+}
+
+.imgOptionsMobile{
+
+}
+
+.imgExitMobile{
+
+}
+
+.divButtonsHeader{
+    margin-top: 1rem;
+
+    
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    display: none;
+
+}
+
+.buttonLoguin{
+
+    /* width: 50%; */
+    padding: 0.4rem;
+    color: var(--blue);
+    background-color: var(--white);
+    border:1px solid var(--blue);
+
+    font-weight: 700;
+
+}
+
+.buttonHome{
+
+    /* width: 50%; */
+    padding: 0.4rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border:1px solid var(--blue);
+
+    font-weight: 700;
+
+}
+
+.divObserver{
+    width: 1px;
+    height: 1px;
+    display: none;
+
+}
+
+/* ------------------------------------------------------------------ */
+
+main{
+
+    width: 100%;
+    height: 100vh;
+
+    background-image:url("/assets/imgBackground.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+form{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    height: 45vh;
+    justify-content: space-evenly;
+
+}
+
+.h2Loguin{
+
+
+}
+
+.pLoguin{
+
+}
+
+input{
+
+    padding: 0.5rem 1rem ;
+    margin: 0 1rem;
+    border: 1px solid var(--black);
+
+}
+
+.buttonLoguinForm{
+
+    padding: 0.5rem 1rem ;
+    margin: 0 1rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+
+}
+
+.spanForm{
+
+}
+
+.buttonregisterForm{
+
+    padding: 0.5rem 1rem ;
+    margin: 0 1rem;
+
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+
+}
+
+
+.divTostErro{
+    padding: 1.5rem;
+    background-color: var(--red);
+    border-radius: 0.6rem;
+    position: absolute;
+    bottom:2rem;
+    right: 0;
+}
+
+.pTostErro{
+
+    color: var(--white);
+    font-weight: 700;
+}
+
+@media(min-width:500px){
+
+    .divButtonsHeaderMobile{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .divTitle{
+        margin: 0 4rem;
+    
+    }
+
+    .divButtonsHeader{
+        margin: 0 4rem;
+        display: flex;
+        
+
+    }
+
+    .buttonLoguin{
+        white-space:nowrap;
+
+    }
+
+    .divObserver{
+        display: flex;
+    }
+
+    form{
+        max-width: 450px;
+    }
+
+}

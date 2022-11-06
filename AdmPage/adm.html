@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="adm.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerContent container">
+
+            <div class="divTitle ">
+                <img src="/assets/poit.png" alt="" class="imgPoint">
+                <h1 class="h1Header">Kenzie Empresas</h1>
+            </div>
+
+            <button class="buttonLogout">Logout</button>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="sectionDepartment">
+            <div class="divHeaderDepartment">
+                <h2 class="h2Section">Departamentos</h2>
+                <select name="" id="" class="selectEnterprise">
+                    <option value="">Selecionar Enpresa</option>
+                </select>
+                <button class="buttonCreateDepartment">Criar</button>
+            </div>
+
+            <div class="cardsDepartments">
+
+
+            </div>
+        </section>
+
+        <section class="sectionUsers">
+            <h2 class="h2Users">Usuarios Cadastrados</h2>
+
+            <div class="DivCardsUsers">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- -----------------------------------------------------------MODAIS------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------criar departamento--------------------------------------------------------- -->
+
+    <dialog class="createDepartmentModal">
+
+        <form class="formModal">
+
+            <img src="/assets/exit.png" alt="" class="buttonX">
+            <h3 class="titleModal">Criar Departamento</h3>
+            <input type="text" placeholder="Nome do departamento" class="inputModal" name="name" required>
+            <input type="text" placeholder="Descrição" class="inputModal" name="description" required>
+            <select name="" id="" class="selectModal" required>
+                <option value="">Selecionar empresa</option>
+            </select>
+            <button type="submit" class="buttonSubmitModal">Criar o departamento</button>
+
+        </form>
+
+
+    </dialog>
+
+    <!-- ---------------------------------------editar departamento------------------------------------------------------------------ -->
+
+    <dialog class="editDepartmantModal">
+
+        <form class="formModal formModal2">
+            <img src="/assets/exit.png" alt="" class="buttonX buttonX2">
+            <h3 class="titleModal">Editar Departamento</h3>
+            <input type="text" placeholder="Nome do departamento" class="inputModal" name="name">
+            <input type="text" placeholder="Descrição" class="inputModal" name="description">
+
+            <button type="submit" class="buttonSubmitModal">Salvar alterações</button>
+        </form>
+
+    </dialog>
+
+    <!-- ---------------------------------------------editar Usuario------------------------------------------------------------ -->
+
+    <dialog class="editUserModal">
+
+        <form class="formEditUser">
+            <img src="/assets/exit.png" alt="" class=" buttonX4">
+            <h3 class="titleEditUser">Editar Usuário</h3>
+
+            <select name="kind_of_work" id="kind_of_work" class="selectEditUser" >
+                <option value="">Selecionar modalidade de trabalho </option>
+                <option value="presencial">presencial</option>
+                <option value="home office">home office</option>
+                <option value="hibrido">hibrido</option>
+
+            </select>
+
+            <select name="professional_level" id="professional_level" class="selectEditUser">
+                <option value="">Selecionar nível profissional</option>
+                <option value="sênior">sênior</option>
+                <option value="pleno">pleno</option>
+                <option value="júnior">júnior</option>
+                <option value="estágio">estágio</option>
+
+            </select>
+
+            <button type="submit" class="buttonEditUser">Editar</button>
+        </form>
+
+    </dialog >
+
+    <!-- --------------------------------------------------------------------------------------------------------- -->
+
+    <dialog class="viewDeparment" >
+
+        <img src="/assets/exit.png" alt="" class=" buttonX3">
+
+        <h2 class="nameDepartmentModal">Nome do departamento</h2>
+
+        <section class="TopSectionModal ">
+            <div class="divH3AndP">
+                <h3 class="h3Desc">Descrição do departamento</h3>
+                <p class="pEnterprise">Empresa pertencente</p>
+            </div>
+            <form action="" class="formView">
+                <select name="user_uuid" id="" class="selectUser">
+                    <option value="">Selecionar usuário</option>
+                </select>
+                <button type="submit" class="buttonRegister"  >Cadastrar</button>
+            </form>
+
+        </section>
+
+        <section class="sectionCardsModal">
+
+            <div class="cardUserModal">
+
+            </div>
+
+        </section>
+
+
+
+    </dialog>
+
+
+    
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <dialog class="modalConfirm1" >
+        <img src="/assets/exit.png" alt="" class="closeModal">
+        <h2 class="h2Modal">Realmente deseja deletar o  <span class="spanModal">deparmentNome</span> e demitir seus funcionários?</h2>
+        <button class="buttonConfirm">Confirmar</button>
+    </dialog>
+    
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <dialog class="modalConfirm2" >
+        <img src="/assets/exit.png" alt="" class="closeModal2">
+        <h2 class="h2Modal">Realmente deseja remover o  <span class="spanModal2">UserNome</span>?</h2>
+        <button class="buttonConfirm2">Confirmar</button>
+    </dialog>
+    
+
+    <script type="module" src="adm.js"></script>
+</body>
+
+</html>
