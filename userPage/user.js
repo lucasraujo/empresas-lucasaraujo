@@ -54,16 +54,13 @@ async function getUserInfo() {
         <p class="pDefault">Você ainda não foi contratado</p>
     </section> `)
 
-    let sectionContainer = document.querySelector("sectionContainer")
+    let sectionContainer = document.querySelector(".sectionContainer")
 
-    sectionContainer.classList.add(" displayNone")
+    sectionContainer.classList.add("displayNone")
 
    
 
     } else {
-
-
-
 
         let sectionContainer = document.querySelector(".sectionContainer")
         let h2CompanyName = document.querySelector(".h2CompanyName")
